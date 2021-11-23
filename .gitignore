@@ -2,3 +2,4 @@
 .vscode/
 __pycache__/
 Classes/__pycache__/
+*.sqlite3
