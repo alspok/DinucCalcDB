@@ -4,13 +4,13 @@ from Classes.NucCalculate import NucCalculate
 from Classes.OligoCountY import OligoCountY
 from Classes.SeqMetaDB import SQLQuery, SeqMetaDB
 from Classes.OligoDict import OligoDict
+from Classes.SeqShuffle import SeqShuffle
 
 def dinucIndex(seq: object) -> None:
-# def dinucIndex():
     
     oligoDBDict = defaultdict()
     oligoDBDict.update(OligoDict().headDict(seq))
-    
+    '''Calc '''
     dinucDict = OligoCountY(str(seq.seq)).oligoPosList()
     dinucDict = dict(sorted(dinucDict.items()))
     seqDinucLength = NucCalculate(str(seq.seq)).regexSeqLength() // 2
