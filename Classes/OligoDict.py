@@ -48,7 +48,7 @@ class OligoDict():
             svalue = ', '.join(value)
             dinucCountStr[key] = svalue
             
-        dinucCountStr.update({'dinucDiffSum': f'{dinucDiffSum:.6f}'})
+        dinucCountStr.update({'di_diff': f'{dinucDiffSum:.6f}'})
         
         return dinucCountStr
         
