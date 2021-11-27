@@ -10,7 +10,8 @@ def dinucIndex(seq: object) -> None:
     
     oligoDBDict = defaultdict()
     oligoDBDict.update(OligoDict().headDict(seq))
-    '''Calc '''
+    
+    '''Calc frq and frq difference sum of dinucs in two frames.'''
     dinucDict = OligoCountY(str(seq.seq)).oligoPosList()
     dinucDict = dict(sorted(dinucDict.items()))
     seqDinucLength = NucCalculate(str(seq.seq)).regexSeqLength() // 2
@@ -22,6 +23,13 @@ def dinucIndex(seq: object) -> None:
         
     SeqMetaDB('dinucdb.sqlite3', 'dinuctbl').initTable()
     SQLQuery('dinucdb.sqlite3', 'dinuctbl').insertDict(oligoDBDict)
+    
+    '''Calc frq and frq difference sum of dinucs in two frames of shuffled prime sequence.
+    Shuffle sequences by mono- and di-nucleotides.'''
+    for _ in range(10):
+        seqShuffle = SeqShuffle(seq).seqMonoShuffle()
+        dinucShuffleDict = OligoCountY(seqShuffle).oligoPosList()
+    
     
     pass
    

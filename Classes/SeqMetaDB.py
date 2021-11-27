@@ -27,6 +27,7 @@ class SeqMetaDB():
                     Column('di_diff', String),
                     Column('mono_shuffle_diff', String),
                     Column('di_shuffle_diff', String),
+                    Column('tri_shuffle_diff', String),
                     Column('aa', String),
                     Column('aa', String),
                     Column('aa', String),

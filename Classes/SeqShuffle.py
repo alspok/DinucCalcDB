@@ -19,7 +19,7 @@ class SeqShuffle():
         random.shuffle(tri)
         return ''.join(tri)
         
-    
+'''    
 def shuffle():
     seq = 'aaacagatcacccgctgagcgggttatctgtta'
     for i in range(10):
@@ -41,4 +41,4 @@ def shuffle():
     
 if __name__ == '__main__':
     shuffle()
-        
+'''
