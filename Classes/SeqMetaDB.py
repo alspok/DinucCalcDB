@@ -86,7 +86,7 @@ class SQLQuery():
         return res
                 
                 
-    '''UPDATE FROM table WHERE condition; '''
+    '''UPDATE table SET column=value WHERE condition;'''
     def update(self, columns: str, condition: str) -> None:
         with self.engine.connect() as conn:
             query = f"UPDATE {self.table} SET {columns} WHERE {condition}"

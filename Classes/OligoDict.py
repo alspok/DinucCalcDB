@@ -50,6 +50,6 @@ class OligoDict():
             
         dinucCountStr.update({'di_diff': f'{dinucDiffSum:.6f}'})
         
-        return dinucCountStr
+        return dinucCountStr, dinucDiffSum
         
     
