@@ -36,6 +36,7 @@ def dinucIndex(seq: object) -> None:
     dinucShuffleStr = [f'{item:.6f}' for item in dinucShuffleDiffSumList]
     dinucShuffleQueryStr = ', '.join(dinucShuffleStr)
     oligoDBDict.update({'mono_shuffle_diff': dinucShuffleQueryStr})
+    print('Mono shuffle done.')
     
     '''Shuffle prime sequence by DI-nucleotides.'''
     dinucShuffleDiffSumList = []
@@ -50,6 +51,7 @@ def dinucIndex(seq: object) -> None:
     dinucShuffleStr = [f'{item:.6f}' for item in dinucShuffleDiffSumList]
     dinucShuffleQueryStr = ', '.join(dinucShuffleStr)
     oligoDBDict.update({'di_shuffle_diff': dinucShuffleQueryStr})
+    print('Di shuffle done.')
     
     '''Shuffle prime sequence by TRI-nucleotides.'''
     dinucShuffleDiffSumList = []
@@ -64,12 +66,9 @@ def dinucIndex(seq: object) -> None:
     dinucShuffleStr = [f'{item:.6f}' for item in dinucShuffleDiffSumList]
     dinucShuffleQueryStr = ', '.join(dinucShuffleStr)
     oligoDBDict.update({'tri_shuffle_diff': dinucShuffleQueryStr})
+    print('Tri shuffle done.')
 
+    '''Write dinuc calc results dictionary to sql table.'''
     SeqMetaDB('dinucdb.sqlite3', 'dinuctbl').initTable()
     SQLQuery('dinucdb.sqlite3', 'dinuctbl').insertDict(oligoDBDict)
     
-    pass
-   
-    
-if __name__ == "__main__":
-    dinucIndex()
