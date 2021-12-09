@@ -4,7 +4,9 @@ from OligoCalcDB import dinucIndex
 
 def seqInput():
 
-    base_path = "C:\\Users\\hp\\source\\repos\\Sequencies\\Procaryote\\Archaea\\ncbi-genomes-2021-11-24"
+    # base_path = "C:\\Users\\hp\\source\\repos\\Sequencies\\Procaryote\\Archaea\\ncbi-genomes-2021-11-24"
+    # base_path = "C:\\Users\\hp\\source\\repos\\Sequencies\\Viruses\\ncbi-genomes-2021-11-24"
+    base_path = "C:\\Users\\hp\\source\\repos\\Sequencies\Fungi"
 
     i = 1
     for file in os.listdir(base_path):
