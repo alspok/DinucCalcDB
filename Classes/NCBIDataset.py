@@ -1,5 +1,6 @@
 import subprocess
 import glob
+from datetime import datetime
 from Bio import SeqIO
 from Classes.OligoCalcDB import OligoCalcDB
 
@@ -35,7 +36,8 @@ class NCBIDataset():
                 error_msg = str(e)
                 print(error_msg)
                 with open("ncbi_dataset.log", 'a') as fh:
-                    fh.write(f"{error_msg}\n")
+                    now = datetime.now()
+                    fh.write(f"{error_msg}\t{now.strftime('%Y.%m.%d %H:%M:%S')}\n")
                 
         pass
     
