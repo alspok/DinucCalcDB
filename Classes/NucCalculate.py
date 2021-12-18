@@ -1,6 +1,7 @@
 import re
 
 class NucCalculate():
+    
     def __init__(self, seq: str) -> None:
         self.seq = seq.lower()
         self.nucs = ['a', 'c', 'g', 't']

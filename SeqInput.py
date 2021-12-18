@@ -1,12 +1,15 @@
 import os
 from Bio import SeqIO
-from OligoCalcDB import dinucIndex
+from Classes.OligoCalcDB import dinucIndex
 
 def seqInput():
 
     # base_path = "C:\\Users\\hp\\source\\repos\\Sequencies\\Procaryote\\Archaea\\ncbi-genomes-2021-11-24"
     # base_path = "C:\\Users\\hp\\source\\repos\\Sequencies\\Viruses\\ncbi-genomes-2021-11-24"
-    base_path = "C:\\Users\\hp\\source\\repos\\Sequencies\Fungi"
+    # base_path = "C:\\Users\\hp\\source\\repos\\Sequencies\Fungi"
+    # base_path = "C:\\Users\\hp\\source\\repos\\Sequencies\\Eucaryote\Plants"
+    
+    base_path = ".\ncbi-dataset\data"
 
     i = 1
     for file in os.listdir(base_path):
