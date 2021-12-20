@@ -1,4 +1,5 @@
 import subprocess
+import os
 import glob
 from datetime import datetime
 from Bio import SeqIO
@@ -6,8 +7,8 @@ from Classes.OligoCalcDB import OligoCalcDB
 
 class NCBIDataset():
 
-    def ncbiDatasets(self, acc_list):
-        # acc_list = ["GCF_009729015.1", "GCF_000812185.1", "GCF_900177045.1"]
+    def ncbiDatasets(self, acc_list: list):
+        
         for acc in acc_list:
             try:
                 subprocess.run("datasets download genome accession " + acc +
@@ -17,17 +18,21 @@ class NCBIDataset():
                             " --exclude-rna ", shell=True)
                 subprocess.run("tar xf ncbi_dataset.zip", shell=True)
                 
-                for file_name in glob.glob(".\\ncbi_dataset\\data\\" + acc + "\\" + acc + "*.fna"):
+                wdir = ".\\ncbi_dataset\\data\\" + acc + "\\"
+                wdir_files = os.listdir(wdir)
+                sub_wdir_files = []
+                for sub_file in wdir_files:
+                    if sub_file.find(acc) != -1 or sub_file.find("chr") != -1:
+                        sub_wdir_files.append(f"{wdir}{sub_file}")
+                for file_name in sub_wdir_files:
                     for seq_record in SeqIO.parse(file_name, "fasta"):
+                        if seq_record.description.find("plasmid") > -1: #Bypass plasmids in seq description
+                            continue
                         print(f"{seq_record}...\tlen {len(seq_record)}bp\n")
-                        sr = type(seq_record)
-                        srs = type(seq_record.seq)
                         OligoCalcDB().dinucIndex(seq_record)
                     # with open(file_name, 'r') as fh:
                     #     print(acc)
                     #     print(fh.read(200) + '...')
-                        
-                        
                         
                 subprocess.run("del ncbi_dataset.zip", shell=True)
                 subprocess.run("rmdir /s /q ncbi_dataset", shell=True)
@@ -41,11 +46,11 @@ class NCBIDataset():
                 
         pass
     
-def ncbiDataset():
+# def ncbiDataset():
         
-    acc_list = ["GCF_009729015.1", "GCF_000812185.1", "GCF_900177045.1"]
-    NCBIDataset().ncbiDatasets(acc_list)
+#     acc_list = ["GCF_009729015.1", "GCF_000812185.1", "GCF_900177045.1"]
+#     NCBIDataset().ncbiDatasets(acc_list)
 
 
-if __name__ == "__main__":
-    ncbiDataset()
+# if __name__ == "__main__":
+#     ncbiDataset()
