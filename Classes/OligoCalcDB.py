@@ -42,7 +42,7 @@ class OligoCalcDB():
         
         '''Shuffle prime sequence by DI-nucleotides.'''
         dinucShuffleDiffSumList = []
-        shuffle_quantity = 3 # Seq shuffle times.
+        shuffle_quantity = 20 # Seq shuffle times.
         
         print(f"Suffling dinuc({shuffle_quantity})", end=' ')
         for _ in range(shuffle_quantity):

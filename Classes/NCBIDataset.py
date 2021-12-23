@@ -11,7 +11,7 @@ class NCBIDataset():
         
         for acc in acc_list:
             try:
-                subprocess.run("datasets download genome accession " + acc +
+                subprocess.run(".\\bin\\datasets download genome accession " + acc +
                             " --exclude-protein " +
                             " --exclude-gff3 " +
                             " --exclude-genomic-cds"
