@@ -28,7 +28,7 @@ class NCBIDataset():
                     for seq_record in SeqIO.parse(file_name, "fasta"):
                         if seq_record.description.find("plasmid") > -1: #Bypass plasmids in seq description
                             continue
-                        print(f"{seq_record}...\tlen {len(seq_record)}bp\n")
+                        print(f"{seq_record}\tlen {len(seq_record)}bp")
                         OligoCalcDB().dinucIndex(seq_record)
                     # with open(file_name, 'r') as fh:
                     #     print(acc)

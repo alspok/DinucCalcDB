@@ -11,6 +11,7 @@ class OligoCalcDB():
         
         oligoDBDict = defaultdict()
         oligoDBDict.update(OligoDict().headDict(seq))
+        shuffle_quantity = 10 # Seq shuffle times.
         
         '''Calc frq and frq difference sum of dinucs in two frames.'''
         dinucDict = OligoCountY(str(seq.seq)).oligoPosList()
@@ -20,13 +21,16 @@ class OligoCalcDB():
         oligoDBDict.update(dinucCountStr)
     
         for key, value in oligoDBDict.items():
-            print(f'{key}\t{value}')
+            if key == "seq_name" or key == "description" or key == "seq_length":
+                continue
+            else:
+                print(f'{key}\t{value}')
             
         
         '''Calc frq and frq difference sum of dinucs in two frames of shuffled prime sequence.
            Shuffle prime sequences by MONO-nucleotides.
         dinucShuffleDiffSumList = []
-        for _ in range(10):
+        for _ in range(shuffle_quantity):
             seqShuffle = SeqShuffle(seq).seqMonoShuffle() # Mononuc shuffle.
             dinucShuffleDict = OligoCountY(seqShuffle).oligoPosList()
             dinucShuffleDict = dict(sorted(dinucShuffleDict.items()))
@@ -42,26 +46,23 @@ class OligoCalcDB():
         
         '''Shuffle prime sequence by DI-nucleotides.'''
         dinucShuffleDiffSumList = []
-        shuffle_quantity = 20 # Seq shuffle times.
-        
-        print(f"Suffling dinuc({shuffle_quantity})", end=' ')
-        for _ in range(shuffle_quantity):
-            print(".", end='')
+        for i in range(shuffle_quantity):
+            print(f"Suffle dinuc [{i+1} of {shuffle_quantity}]", end="\r", flush=True)
             seqShuffle = SeqShuffle(seq).seqDiShuffle() # Dinuc shuffle.
             dinucShuffleDict = OligoCountY(seqShuffle).oligoPosList()
             dinucShuffleDict = dict(sorted(dinucShuffleDict.items()))
             seqDinucLength = NucCalculate(str(seq.seq)).regexSeqLength() // 2
             _, dinucShuffleDiffSum = OligoDict().dinucDict(dinucShuffleDict, seqDinucLength)
             dinucShuffleDiffSumList.append(dinucShuffleDiffSum)
-        print()
+        print("")
         dinucShuffleStr = [f'{item:.6f}' for item in dinucShuffleDiffSumList]
         dinucShuffleQueryStr = ', '.join(dinucShuffleStr)
         oligoDBDict.update({'di_shuffle_diff': dinucShuffleQueryStr})
-        print('Di shuffle done.')
+        print()
         
         '''Shuffle prime sequence by TRI-nucleotides.
         dinucShuffleDiffSumList = []
-        for _ in range(10):
+        for _ in range(shuffle_quantity):
             seqShuffle = SeqShuffle(seq).seqTriShuffle() # Trinuc shuffle.
             dinucShuffleDict = OligoCountY(seqShuffle).oligoPosList()
             dinucShuffleDict = dict(sorted(dinucShuffleDict.items()))
