@@ -3,3 +3,6 @@
 __pycache__/
 Classes/__pycache__/
 *.sqlite3
+ncbi_dataset/
+ncbi_dataset.zip
+summary.json

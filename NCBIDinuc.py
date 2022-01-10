@@ -3,13 +3,14 @@ import datetime
 from Classes.NCBIDataformat import NCBIDataformat
 from Classes.NCBIDataset import NCBIDataset
 from Classes.NCBIDataformat import NCBIDataformat
+from Classes.DataSummary import DataSummary
 
 # def ncbiDinuc(acc_file_name):
 #     acc_file_name = sys.argv[1]
 #     print(acc_file_name)
     
 def ncbiDinuc():
-    acc_file_name = "coccomyxa"
+    acc_file_name = "genometable\chlorophyta"
     print(acc_file_name)
 
     acc_list = []
@@ -17,6 +18,8 @@ def ncbiDinuc():
         with open(acc_file_name, "r") as fh:
             lines = fh.readlines()
             [acc_list.append(line.strip()) for line in lines]
+            
+        acc_list_count = DataSummary().dataSummary(acc_list)
             
         # NCBIDataformat().ncbiDataformat(acc_list)    
         NCBIDataset().ncbiDatasets(acc_list)
