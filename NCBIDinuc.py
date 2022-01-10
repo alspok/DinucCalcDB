@@ -10,7 +10,7 @@ from Classes.DataSummary import DataSummary
 #     print(acc_file_name)
     
 def ncbiDinuc():
-    acc_file_name = "genometable\chlorophyta"
+    acc_file_name = "genometable\coccomyxa"
     print(acc_file_name)
 
     acc_list = []
