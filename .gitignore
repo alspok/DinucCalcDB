@@ -6,3 +6,4 @@ Classes/__pycache__/
 ncbi_dataset/
 ncbi_dataset.zip
 summary.json
+venv/

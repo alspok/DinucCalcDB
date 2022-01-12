@@ -11,7 +11,7 @@ class OligoCalcDB():
         
         oligoDBDict = defaultdict()
         oligoDBDict.update(OligoDict().headDict(seq))
-        shuffle_quantity = 10 # Seq shuffle times.
+        shuffle_quantity = 3 # Seq shuffle times.
         
         '''Calc frq and frq difference sum of dinucs in two frames.'''
         dinucDict = OligoCountY(str(seq.seq)).oligoPosList()
