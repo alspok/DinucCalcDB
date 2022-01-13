@@ -4,13 +4,13 @@ from Classes.NCBIDataset import NCBIDataset
 #from Classes.NCBIDataformat import NCBIDataformat
 from Classes.DataSummary import DataSummary
 
-# def ncbiDinuc(acc_file_name):
-#     acc_file_name = sys.argv[1]
-#     print(acc_file_name)
-    
-def ncbiDinuc():
-    acc_file_name = "GenomeTable\dunmicro"
+def ncbiDinuc(acc_file_name):
+    acc_file_name = sys.argv[1]
     print(acc_file_name)
+    
+# def ncbiDinuc():
+#     acc_file_name = "GenomeTable\dunmicro"
+#     print(acc_file_name)
 
     acc_list = []
     try:
@@ -28,5 +28,5 @@ def ncbiDinuc():
             fh.write(f"{str(e)}\t{now.strftime('%Y.%m.%d %H:%M:%S')}\n")
         
 if __name__ == "__main__":
-    # ncbiDinuc(sys.argv[1])
-    ncbiDinuc()
+    ncbiDinuc(sys.argv[1])
+    # ncbiDinuc()
