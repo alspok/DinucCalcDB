@@ -1,8 +1,7 @@
 import sys
 import datetime
-from Classes.NCBIDataformat import NCBIDataformat
 from Classes.NCBIDataset import NCBIDataset
-from Classes.NCBIDataformat import NCBIDataformat
+#from Classes.NCBIDataformat import NCBIDataformat
 from Classes.DataSummary import DataSummary
 
 # def ncbiDinuc(acc_file_name):
@@ -10,7 +9,7 @@ from Classes.DataSummary import DataSummary
 #     print(acc_file_name)
     
 def ncbiDinuc():
-    acc_file_name = "genometable\coccomyxa"
+    acc_file_name = "GenomeTable\\dunmicro"
     print(acc_file_name)
 
     acc_list = []
@@ -22,7 +21,7 @@ def ncbiDinuc():
         acc_list_count = DataSummary().dataSummary(acc_list)
             
         # NCBIDataformat().ncbiDataformat(acc_list)    
-        NCBIDataset().ncbiDatasets(acc_list)
+        NCBIDataset().ncbiDatasets(acc_list, acc_list_count)
     except Exception as e:
         with open("ncbi_dataset.log", 'a') as fh:
             now = datetime.now()

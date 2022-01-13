@@ -1,4 +1,5 @@
 {
   "Interpreter": "venv\\Scripts\\python.exe",
-  "TestFramework": "unittest"
+  "TestFramework": "unittest",
+  "SuppressEnvironmentCreationPrompt": true
 }

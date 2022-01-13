@@ -7,14 +7,14 @@ from Classes.OligoCalcDB import OligoCalcDB
 
 class NCBIDataset():
 
-    def ncbiDatasets(self, acc_list: list):
+    def ncbiDatasets(self, acc_list: list, acc_list_count: int):
         
         for acc in acc_list:
             try:
                 subprocess.run(".\\bin\\datasets download genome accession " + acc +
                             " --exclude-protein " +
                             " --exclude-gff3 " +
-                            " --exclude-genomic-cds"
+                            " --exclude-genomic-cds" +
                             " --exclude-rna ", shell=True)
                 subprocess.run("tar xf ncbi_dataset.zip", shell=True)
                 
@@ -24,10 +24,13 @@ class NCBIDataset():
                 for sub_file in wdir_files:
                     if sub_file.find(acc) != -1 or sub_file.find("chr") != -1:
                         sub_wdir_files.append(f"{wdir}{sub_file}")
+                current_count = 1
                 for file_name in sub_wdir_files:
                     for seq_record in SeqIO.parse(file_name, "fasta"):
                         if seq_record.description.find("plasmid") > -1: #Bypass plasmids in seq description
                             continue
+                        print(f"\nCalculating {current_count} of {acc_list_count}")
+                        current_count += 1
                         print(f"{seq_record}\tlen {len(seq_record)}bp")
                         OligoCalcDB().dinucIndex(seq_record)
                     # with open(file_name, 'r') as fh:

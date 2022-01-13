@@ -7,8 +7,9 @@ class DataSummary():
         acc_count = 0
         
         for acc in acc_list:
-            datasets_query = ".\\bin\\datasets summary genome accession " + acc + " > summary.json"
-            subprocess.run(datasets_query, shell=True)
+            subprocess.run(".\\bin\\datasets summary genome accession " + acc + " --exclude-rna > summary.json", shell=True)
+            
+            #subprocess.run(datasets_query, shell=True)
             with open("summary.json", "r") as json_file:
                 json_object = json.load(json_file)
             
