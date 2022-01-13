@@ -9,7 +9,7 @@ from Classes.DataSummary import DataSummary
 #     print(acc_file_name)
     
 def ncbiDinuc():
-    acc_file_name = "GenomeTable\\dunmicro"
+    acc_file_name = "GenomeTable\dunmicro"
     print(acc_file_name)
 
     acc_list = []

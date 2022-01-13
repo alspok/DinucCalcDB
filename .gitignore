@@ -1,4 +1,5 @@
 .venv/
+venv/
 .vscode/
 __pycache__/
 Classes/__pycache__/
@@ -6,4 +7,3 @@ Classes/__pycache__/
 ncbi_dataset/
 ncbi_dataset.zip
 summary.json
-venv/
