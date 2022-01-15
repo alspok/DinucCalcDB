@@ -20,6 +20,7 @@ class SeqMetaDB():
         self.table = Table(
                     self.table, meta,
                     Column('id', Integer, primary_key = True),
+                    Column('access_name', String)
                     Column('seq_name', String),
                     Column('description', String),
                     Column('seq_length', String),
