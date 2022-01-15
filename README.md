@@ -4,7 +4,11 @@ https://www.ncbi.nlm.nih.gov/datasets
 
 This zip archive contains an NCBI Datasets Data Package.
 
+<<<<<<< HEAD
 NCBI Datasets Data Packages can include sequence, annotation and other data files, and metadata in one or more data report files.
+=======
+NCBI Datasets Data Packages can include sequence, annotation and other data files, and metadata in one or more data report files. 
+>>>>>>> 266d18afb6b48fe967d9f0d127a4eb7a7ccfa0ad
 Data report files are in JSON Lines format.
 
 ---
@@ -31,6 +35,7 @@ NCBI Datasets is a new resource that lets you easily gather data from across NCB
 
 ### Where can I find NCBI Datasets documentation?
 
+<<<<<<< HEAD
 Visit the NCBI Datasets documentaion pages:
 https://www.ncbi.nlm.nih.gov/datasets/docs/
 
@@ -38,4 +43,13 @@ https://www.ncbi.nlm.nih.gov/datasets/docs/
 
 National Center for Biotechnology Information
 National Library of Medicine
+=======
+Visit the NCBI Datasets documentaion pages: 
+https://www.ncbi.nlm.nih.gov/datasets/docs/  
+
+---
+
+National Center for Biotechnology Information  
+National Library of Medicine  
+>>>>>>> 266d18afb6b48fe967d9f0d127a4eb7a7ccfa0ad
 info@ncbi.nlm.nih.gov

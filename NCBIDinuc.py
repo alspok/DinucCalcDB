@@ -28,5 +28,10 @@ def ncbiDinuc(acc_file_name):
             fh.write(f"{str(e)}\t{now.strftime('%Y.%m.%d %H:%M:%S')}\n")
         
 if __name__ == "__main__":
+<<<<<<< HEAD
     ncbiDinuc(sys.argv[1])
     # ncbiDinuc()
+=======
+    # ncbiDinuc(sys.argv[1])
+    ncbiDinuc()
+>>>>>>> 266d18afb6b48fe967d9f0d127a4eb7a7ccfa0ad
