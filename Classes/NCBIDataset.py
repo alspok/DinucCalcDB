@@ -20,11 +20,11 @@ class NCBIDataset():
                 
                 wdir = ".\\ncbi_dataset\\data\\" + acc + "\\"
                 wdir_files = os.listdir(wdir)
+                current_count = 1
                 sub_wdir_files = []
                 for sub_file in wdir_files:
                     if sub_file.find(acc) != -1 or sub_file.find("chr") != -1:
                         sub_wdir_files.append(f"{wdir}{sub_file}")
-                current_count = 1
                 for file_name in sub_wdir_files:
                     for seq_record in SeqIO.parse(file_name, "fasta"):
                         if seq_record.description.find("plasmid") > -1: #Bypass plasmids in seq description
