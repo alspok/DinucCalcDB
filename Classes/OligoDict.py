@@ -11,7 +11,7 @@ class OligoDict():
         head = defaultdict()
         rSeqLength = NucCalculate(str(seq.seq)).regexSeqLength()
         
-        head.update({'access_name': acc_name,
+        head.update({'assembly_name': acc_name,
                      'seq_name': seq.id,
                      'description': seq.description,
                     #  'seq_length': f'{len(seq.seq)} bp',
