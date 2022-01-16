@@ -1,18 +1,9 @@
 .venv/
-<<<<<<< HEAD
 .vscode/
 venv/
-=======
-venv/
-.vscode/
->>>>>>> 266d18afb6b48fe967d9f0d127a4eb7a7ccfa0ad
 __pycache__/
 Classes/__pycache__/
 *.sqlite3
 ncbi_dataset/
 ncbi_dataset.zip
-<<<<<<< HEAD
 summary.json
-=======
-summary.json
->>>>>>> 266d18afb6b48fe967d9f0d127a4eb7a7ccfa0ad
