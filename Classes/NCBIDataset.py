@@ -32,7 +32,7 @@ class NCBIDataset():
                         print(f"\nCalculating {current_count} of {acc_list_count}")
                         current_count += 1
                         print(f"{seq_record}\tlen {len(seq_record)}bp")
-                        OligoCalcDB().dinucIndex(seq_record, file_name)
+                        OligoCalcDB().dinucIndex(seq_record, acc)
                     # with open(file_name, 'r') as fh:
                     #     print(acc)
                     #     print(fh.read(200) + '...')
