@@ -7,10 +7,10 @@ from Classes.SeqShuffle import SeqShuffle
 
 class OligoCalcDB():
 
-    def dinucIndex(self, seq: object) -> None:
+    def dinucIndex(self, seq: object, acc_name) -> None:
         
         oligoDBDict = defaultdict()
-        oligoDBDict.update(OligoDict().headDict(seq))
+        oligoDBDict.update(OligoDict().headDict(seq, acc_name))
         shuffle_quantity = 6 # Seq shuffle times.
         
         '''Calc frq and frq difference sum of dinucs in two frames.'''
