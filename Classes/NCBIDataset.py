@@ -8,7 +8,7 @@ from Classes.OligoCalcDB import OligoCalcDB
 class NCBIDataset():
 
     def ncbiDatasets(self, acc_list: list, acc_list_count: int):
-        
+        current_count = 1
         for acc in acc_list:
             try:
                 subprocess.run(".\\bin\\datasets download genome accession " + acc +
@@ -20,7 +20,6 @@ class NCBIDataset():
                 
                 wdir = ".\\ncbi_dataset\\data\\" + acc + "\\"
                 wdir_files = os.listdir(wdir)
-                current_count = 1
                 sub_wdir_files = []
                 for sub_file in wdir_files:
                     if sub_file.find(acc) != -1 or sub_file.find("chr") != -1:
