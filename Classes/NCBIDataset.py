@@ -28,7 +28,8 @@ class NCBIDataset():
                     for seq_record in SeqIO.parse(file_name, "fasta"):
                         if seq_record.description.find("plasmid") > -1: #Bypass plasmids in seq description
                             continue
-                        print(f"\nCalculating {current_count} of {acc_list_count}")
+                        print(f"\nAssembly name {acc}")
+                        print(f"Calculating ID {current_count} of {acc_list_count}")
                         current_count += 1
                         print(f"{seq_record}\tlen {len(seq_record)}bp")
                         OligoCalcDB().dinucIndex(seq_record, acc)
