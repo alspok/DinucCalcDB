@@ -1,4 +1,4 @@
-def fileModeification():
+def fileModification():
 
     input_file = "GenomeTable\\embryophyta"
     output_file = "GenomeTable\\embryophyta.mdf"
@@ -15,4 +15,4 @@ def fileModeification():
     pass
 
 if __name__ == "__main__":
-    fileMode()
+    fileModification()
