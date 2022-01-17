@@ -9,7 +9,7 @@ def ncbiDinuc(acc_file_name):
     print(acc_file_name)
     
 # def ncbiDinuc():
-#     acc_file_name = "GenomeTable\\dunmicro"
+#     acc_file_name = "GenomeTable\\embryophyta.mdf"
 #     print(acc_file_name)
 
     acc_list = []
@@ -17,7 +17,7 @@ def ncbiDinuc(acc_file_name):
         with open(acc_file_name, "r") as fh:
             lines = fh.readlines()
             for line in lines:
-                if line[0:1] == "# ":
+                if line[0] == "#":
                     continue
                 else:
                     acc_list.append(line.strip())
