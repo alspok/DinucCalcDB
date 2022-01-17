@@ -16,7 +16,11 @@ def ncbiDinuc(acc_file_name):
     try:
         with open(acc_file_name, "r") as fh:
             lines = fh.readlines()
-            [acc_list.append(line.strip()) for line in lines]
+            for line in lines:
+                if line[0:1] == "# ":
+                    continue
+                else:
+                    acc_list.append(line.strip())
             
         acc_list_count = DataSummary().dataSummary(acc_list)
             

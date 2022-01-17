@@ -1,7 +1,7 @@
-def fileMode():
+def fileModeification():
 
     input_file = "GenomeTable\\embryophyta"
-    output_file = "GenomeTable\\embryophyta.mod"
+    output_file = "GenomeTable\\embryophyta.mdf"
 
     with open(input_file, "r") as fhr:
         read_list = list(fhr)
