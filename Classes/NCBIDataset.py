@@ -30,8 +30,8 @@ class NCBIDataset():
                             continue
                         print(f"\nAssembly name {acc}")
                         print(f"Calculating ID {current_count} of {acc_list_count}")
-                        current_count += 1
                         print(f"{seq_record}\tlen {len(seq_record)}bp")
+                        current_count += 1
                         OligoCalcDB().dinucIndex(seq_record, acc)
                     # with open(file_name, 'r') as fh:
                     #     print(acc)

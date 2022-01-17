@@ -21,7 +21,7 @@ class OligoCalcDB():
         oligoDBDict.update(dinucCountStr)
     
         for key, value in oligoDBDict.items():
-            if key == "seq_name" or key == "description" or key == "seq_length":
+            if key == "seq_name" or key == "description" or key == "seq_length" or key == "assembly_name":
                 continue
             else:
                 print(f'{key}\t{value}')

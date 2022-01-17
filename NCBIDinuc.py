@@ -9,7 +9,7 @@ def ncbiDinuc(acc_file_name):
     print(acc_file_name)
     
 # def ncbiDinuc():
-#     acc_file_name = "GenomeTable\\embryophyta.mdf"
+#     acc_file_name = "GenomeTable\\_access_id"
 #     print(acc_file_name)
 
     acc_list = []
