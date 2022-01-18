@@ -5,7 +5,7 @@ from Classes.NCBIDataset import NCBIDataset
 from Classes.DataSummary import DataSummary
 
 def ncbiDinuc(acc_file_name):
-    acc_file_name = sys.argv[1]
+    acc_file_name = "genomes\\plants\\" + sys.argv[1]
     print(acc_file_name)
     
 # def ncbiDinuc():
