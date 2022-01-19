@@ -17,12 +17,13 @@ from Classes.DataSummary import DataSummary
     
 def ncbiDinuc():
     acc_file_name = "Genomes\\Plants\\embryophyta"
+    acc_file_name_long = "Genomes\\Plants\\embryophyta_long"
     print(acc_file_name)
     genome_length = 10**9
 
     acc_list = []
     try:
-        with open(acc_file_name, "r") as fh:
+        with open(acc_file_name, "r") as fh, open(acc_file_name_long, "w") as fhl:
             lines = fh.readlines()
             for line in lines:
                 line_list = line.split("\t")
@@ -31,6 +32,8 @@ def ncbiDinuc():
                 else:
                     if int(line_list[-1]) <= genome_length:
                         acc_list.append(line_list[-2])
+                    else:
+                        fhl.write(line)
             
         acc_list_count = DataSummary().dataSummary(acc_list)
             
