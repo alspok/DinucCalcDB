@@ -4,7 +4,7 @@ from Classes.NCBIDataset import NCBIDataset
 #from Classes.NCBIDataformat import NCBIDataformat
 from Classes.DataSummary import DataSummary
 
-"""Input file items must be separated by tabs.
+"""Input access info file items must be separated by tabs.
    [-2] item of line must be assembly number.
    [-1] item of line must bet seq length in bytes.
    # is first char of comment line separated from items by tab.
