@@ -16,10 +16,10 @@ from Classes.DataSummary import DataSummary
 #     genome_length = 10**9
     
 def ncbiDinuc():
+    genome_length = 10**9
     acc_file_name = "Genomes\\Plants\\embryophyta"
     acc_file_name_long = "Genomes\\Plants\\embryophyta_long"
     print(acc_file_name)
-    genome_length = 10**9
 
     acc_list = []
     try:
