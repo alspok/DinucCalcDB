@@ -4,12 +4,12 @@ from Classes.NCBIDataset import NCBIDataset
 #from Classes.NCBIDataformat import NCBIDataformat
 from Classes.DataSummary import DataSummary
 
-"""Input access id info file items must be separated by tabs.
+"""
+   Input access id info file items must be separated by tabs.
    File from https://www.ncbi.nlm.nih.gov/datasets/genomes.
    Filter columns assembly and size(Mb) as last and penultimate.
    [-2] second to last item in line must be assembly number.
    [-1] last item in line must bet seq length in bytes.
-   # is first char of comment line separated from items by tab.
 """
 
 # def ncbiDinuc(acc_file_name):
