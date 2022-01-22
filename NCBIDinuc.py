@@ -1,7 +1,7 @@
-import sys
+import re
 import datetime
+from Classes.InitValues import InitValues as iv
 from Classes.NCBIDataset import NCBIDataset
-#from Classes.NCBIDataformat import NCBIDataformat
 from Classes.DataSummary import DataSummary
 
 """
@@ -16,11 +16,16 @@ from Classes.DataSummary import DataSummary
 #     acc_file_name = sys.argv[1]
 #     print(acc_file_name)
 #     genome_length = 10**9
-    
+
 def ncbiDinuc():
-    genome_length = 10**9
-    acc_file_name = "Genomes\\Plants\\embryophyta"
-    acc_file_name_long = "Genomes\\Plants\\embryophyta_long"
+    genome_length = 10**10
+    
+    """Init values from InitValues class"""
+    acc_file_name = iv.path + iv.file_name
+    acc_file_name_long = iv.path + iv.file_name_long
+    
+    # acc_file_name = "Genomes\\Test\\access_id"
+    # acc_file_name_long = "Genomes\\Test\\access_id_long"
     print(acc_file_name)
 
     acc_list = []
@@ -28,10 +33,10 @@ def ncbiDinuc():
         with open(acc_file_name, "r") as fh, open(acc_file_name_long, "w") as fhl:
             lines = fh.readlines()
             for line in lines:
-                line_list = line.split("\t")
-                if line_list[0] == "#":
+                if line[0] == "#":
                     continue
                 else:
+                    line_list = line.split()
                     if int(line_list[-1]) <= genome_length:
                         acc_list.append(line_list[-2])
                     else:
