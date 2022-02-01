@@ -8,7 +8,7 @@ class InitValues():
     dbname = path + file_name + ".sqlite3" # sqlite db name with extention
     dbtable = "dinuctbl" # sqlite db table name
 
-    shuffle_mono = 0 # times to shuffle seq by mononucs 
-    shuffle_di = 1 # times to shuffle seq by dinucs
-    shuffle_tri = 0 #times to shuffle seq by trinucs 
+    shuffle_mono = 1 # times to shuffle seq by mononucs 
+    shuffle_di = 2 # times to shuffle seq by dinucs
+    shuffle_tri = 1 #times to shuffle seq by trinucs 
     shuffle_quantity = shuffle_mono + shuffle_di + shuffle_tri # all shuffles
