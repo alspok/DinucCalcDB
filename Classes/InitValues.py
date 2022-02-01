@@ -5,7 +5,7 @@ class InitValues():
     file_name = "access_id" # data input file name
     file_name_long = "access_id_long" # data input file name
     
-    dbname = file_name + ".sqlite3" # sqlite db name with extention
+    dbname = path + file_name + ".sqlite3" # sqlite db name with extention
     dbtable = "dinuctbl" # sqlite db table name
 
     shuffle_mono = 0 # times to shuffle seq by mononucs 
