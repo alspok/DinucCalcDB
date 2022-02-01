@@ -9,6 +9,6 @@ class InitValues():
     dbtable = "dinuctbl" # sqlite db table name
 
     shuffle_mono = 0 # times to shuffle seq by mononucs 
-    shuffle_di = 3 # times to shuffle seq by dinucs
+    shuffle_di = 1 # times to shuffle seq by dinucs
     shuffle_tri = 0 #times to shuffle seq by trinucs 
     shuffle_quantity = shuffle_mono + shuffle_di + shuffle_tri # all shuffles

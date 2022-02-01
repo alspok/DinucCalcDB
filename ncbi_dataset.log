@@ -1,0 +1,3 @@
+'SchemaItem' object, such as a 'Column' or a 'Constraint' expected, got <class 'numbers.Real'>	2022.02.01 18:40:15
+'SchemaItem' object, such as a 'Column' or a 'Constraint' expected, got <class 'numbers.Real'>	2022.02.01 20:30:36
+'SchemaItem' object, such as a 'Column' or a 'Constraint' expected, got <class 'decimal.Decimal'>	2022.02.01 20:51:48

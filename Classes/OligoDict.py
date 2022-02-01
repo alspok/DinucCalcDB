@@ -15,11 +15,13 @@ class OligoDict():
                      'seq_name': seq.id,
                      'description': seq.description,
                     #  'seq_length': f'{len(seq.seq)} bp',
-                     'seq_length': f'{rSeqLength} bp'
+                    #  'seq_length': f'{rSeqLength} bp'
+                     'seq_length': rSeqLength
                     })
                      
         monoNuc = NucCalculate(seq.seq.lower()).nucCalc()
-        head.update({'gc_percent': f'{((monoNuc[1] + monoNuc[2]) / rSeqLength * 100):.2f} %'}) 
+        # head.update({'gc_percent': f'{((monoNuc[1] + monoNuc[2]) / rSeqLength * 100):.2f} %'})
+        head.update({'gc_percent': round(((monoNuc[1] + monoNuc[2]) / rSeqLength * 100), 2)})
         
         return head
     
@@ -49,7 +51,8 @@ class OligoDict():
             svalue = ', '.join(value)
             dinucCountStr[key] = svalue
             
-        dinucCountStr.update({'di_diff': f'{dinucDiffSum:.6f}'})
+        # dinucCountStr.update({'di_diff': f'{dinucDiffSum:.6f}'})
+        dinucCountStr.update({'di_diff': round(dinucDiffSum, 6)})
         
         return dinucCountStr, dinucDiffSum
         

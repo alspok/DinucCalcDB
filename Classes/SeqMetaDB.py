@@ -1,5 +1,7 @@
 '''Create table using BASE'''
-from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String
+from decimal import Decimal
+from numbers import Real
+from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String, Float
 from sqlalchemy.ext.declarative import declarative_base
 
 '''Enter database and table name when instanting class+'''
@@ -23,9 +25,9 @@ class SeqMetaDB():
                     Column('assembly_name', String),
                     Column('seq_name', String),
                     Column('description', String),
-                    Column('seq_length', String),
-                    Column('gc_percent', String),
-                    Column('di_diff', String),
+                    Column('seq_length', Integer),
+                    Column('gc_percent', Float),
+                    Column('di_diff', Float),
                     Column('mono_shuffle_diff', String),
                     Column('di_shuffle_diff', String),
                     Column('tri_shuffle_diff', String),
