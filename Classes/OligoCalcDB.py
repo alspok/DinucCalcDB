@@ -79,6 +79,7 @@ class OligoCalcDB():
         dinucShuffleStr = [f'{item:.6f}' for item in dinucShuffleDiffSumList]
         dinucShuffleQueryStr = ', '.join(dinucShuffleStr)
         oligoDBDict.update({'tri_shuffle_diff': dinucShuffleQueryStr})
+        print('\n')
 
         '''Write dinuc calc results dictionary to sql table.'''
         # SeqMetaDB('dinucdb.sqlite3', 'dinuctbl').initTable()
