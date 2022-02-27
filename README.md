@@ -23,7 +23,7 @@ https://www.ncbi.nlm.nih.gov/datasets/docs/reference-docs/mac-zip-bug/
 ### How do I work with JSON Lines data reports?
 
 Visit our JSON Lines data report documentation page:
-https://www.ncbi.nlm.nih.gov/datasets/docs/how-tos/working-with-jsonl-data-reports/
+https://www.ncbi.nlm.nih.gov/datasets/docs/how-tos/data-reports/working-with-jsonl-data-reports/
 
 ### What is NCBI Datasets?
 

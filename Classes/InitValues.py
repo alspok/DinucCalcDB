@@ -11,12 +11,11 @@ class InitValues():
     file_name = "embryophyta"
     file_name_long = "embryophyta_long"
     """
+    path = "Genomes\\Procaryote\\"
+    db_file_name = "procaryote"
+    # file_name_long = "procaryote_long"
 
-    path = "Genomes\\Procaryote"
-    file_name = "procaryote"
-    file_name_long = "procaryote_long"
-
-    dbname = path + file_name + ".sqlite3" # sqlite db name with extention
+    dbname = path + db_file_name + ".sqlite3" # sqlite db name with extention
     dbtable = "dinuctbl" # sqlite db table name
 
     shuffle_mono = 6 # times to shuffle seq by mononucs 
