@@ -1,0 +1,123 @@
+#  Organism Name	Assembly Name	Assembly Accession	Assembly Stats Total Sequence Length
+#  Atlantibacter hermannii	ASM806485v1	GCF_008064855.1	4315318
+#  Blochmannia endosymbiont of Camponotus (Colobopsis) obliquus	ASM97354v1	GCF_000973545.1	773940
+#  Blochmannia endosymbiont of Camponotus nipponensis	ASM982713v1	GCF_009827135.1	788522
+#  Blochmannia endosymbiont of Colobopsis nipponica	ASM1485706v1	GCF_014857065.1	728116
+#  Blochmannia endosymbiont of Polyrhachis (Hedomyrma) turneri	ASM97350v1	GCF_000973505.1	749321
+#  Buttiauxella agrestis	ASM1323427v1	GCF_013234275.1	4566254
+#  Candidatus Annandia adelgestsuga	ASM395604v1	GCF_003956045.1	334746
+#  Candidatus Annandia pinicola	ASM2054124v1	GCF_020541245.1	348580
+#  Candidatus Blochmannia chromaiodes str. 640	ASM33106v1	GCF_000331065.1	791219
+#  Candidatus Blochmannia pennsylvanicus str. BPEN	ASM1174v1	GCF_000011745.1	791654
+#  Candidatus Blochmannia vafer str. BVAF	ASM18598v2	GCF_000185985.2	722585
+#  Candidatus Doolittlea endobia	DEMHIR	GCF_900039485.1	846562
+#  Candidatus Gullanella endobia	GEFVIR	GCF_900048035.1	938041
+#  Candidatus Hamiltonella defensa 5AT (Acyrthosiphon pisum)	ASM2170v1	GCF_000021705.1	2169363
+#  Candidatus Hoaglandella endobia	HETPER1	GCF_900044015.1	636713
+#  Candidatus Ishikawaella capsulata Mpkobe	ASM82851v1	GCF_000828515.1	754729
+#  Candidatus Mikella endobia	MEPMAR	GCF_900048045.1	352837
+#  Candidatus Moranella endobia PCVAL	ASM36472v1	GCF_000364725.1	538203
+#  Candidatus Profftia lariciata	ASM2054126v1	GCF_020541265.1	1206213
+#  Candidatus Profftia tarda	Pt_Alt_01	GCF_904848675.1	1225795
+#  Candidatus Purcelliella pentastirinorum	ASM339133v1	GCF_003391335.1	479855
+#  Candidatus Riesia pediculicola USDA	ASM9306v1	GCF_000093065.1	582127
+#  Candidatus Riesia pediculischaeffi	ASM207389v1	GCF_002073895.1	571864
+#  Candidatus Schneideria nysicola	ASM1992354v1	GCF_019923545.1	571554
+#  Candidatus Tachikawaea gelatinosa	ASM82881v1	GCF_000828815.1	708439
+#  Cedecea lapagei	36672_A01	GCF_900635955.1	4778444
+#  Cedecea neteri	ASM239344v1	GCF_002393445.1	5469298
+#  Citrobacter amalonaticus	ASM155893v2	GCF_001558935.2	5084037
+#  Citrobacter arsenatis	ASM435384v1	GCF_004353845.1	5370228
+#  Citrobacter braakii	ASM964893v1	GCF_009648935.1	4917491
+#  Citrobacter cronae	ASM1689368v1	GCF_016893685.1	5079087
+#  Citrobacter freundii	ASM381234v1	GCF_003812345.1	5102161
+#  Citrobacter koseri ATCC BAA-895	ASM1804v1	GCF_000018045.1	4735357
+#  Citrobacter pasteurii	ASM1904776v1	GCF_019047765.1	5021319
+#  Citrobacter portucalensis	ASM869360v1	GCF_008693605.1	4929340
+#  Citrobacter rodentium	ASM2127898v1	GCF_021278985.1	5381137
+#  Citrobacter sedlakii	ASM1812842v1	GCF_018128425.1	4967243
+#  Citrobacter telavivensis	ASM936317v1	GCF_009363175.1	5794230
+#  Citrobacter tructae	ASM468434v1	GCF_004684345.1	4946572
+#  Citrobacter werkmanii	ASM869364v1	GCF_008693645.1	5049303
+#  Citrobacter youngae	55685_A01	GCF_900638065.1	4867355
+Cronobacter condimenti 1330	ASM127725v1	GCF_001277255.1	4499482
+Cronobacter dublinensis subsp. dublinensis LMG 23823	ASM127723v1	GCF_001277235.1	4628405
+Cronobacter malonaticus LMG 23826	ASM127721v2	GCF_001277215.2	4473761
+Cronobacter muytjensii ATCC 51329	ASM127719v1	GCF_001277195.1	4364114
+Cronobacter sakazakii	ASM351612v3	GCF_003516125.1	4437993
+Cronobacter universalis NCTC 9529	ASM127717v1	GCF_001277175.1	4436873
+Enterobacter asburiae	ASM703564v1	GCF_007035645.1	4770723
+Enterobacter bugandensis	ASM1513765v1	GCF_015137655.1	4635750
+Enterobacter cancerogenus	ASM1966574v1	GCF_019665745.1	4736684
+Enterobacter chengduensis	ASM198482v2	GCF_001984825.2	5218125
+Enterobacter cloacae	ASM77015v1	GCF_000770155.1	4848754
+Enterobacter ludwigii	ASM175072v1	GCF_001750725.1	4952770
+Enterobacter oligotrophicus	ASM917664v1	GCF_009176645.1	4476585
+Enterobacter roggenkampii	ASM172980v1	GCF_001729805.1	4899997
+Enterobacter sichuanensis	ASM903624v1	GCF_009036245.1	4711389
+Enterobacter soli	ASM22467v1	GCF_000224675.1	5012132
+Enterobacteriaceae endosymbiont of Donacia bicoloricornis	ASM1256795v1	GCF_012567955.1	463713
+Enterobacteriaceae endosymbiont of Donacia cincticornis	ASM1256884v1	GCF_012568845.1	461437
+Enterobacteriaceae endosymbiont of Donacia cinerea	ASM1256992v1	GCF_012569925.1	468015
+Enterobacteriaceae endosymbiont of Donacia clavipes	ASM1257036v1	GCF_012570365.1	463028
+Enterobacteriaceae endosymbiont of Donacia crassipes	ASM1256978v1	GCF_012569785.1	464968
+Enterobacteriaceae endosymbiont of Donacia dentata	ASM1257074v1	GCF_012570745.1	465589
+Enterobacteriaceae endosymbiont of Donacia fulgens	ASM1256754v1	GCF_012567545.1	465858
+Enterobacteriaceae endosymbiont of Donacia marginata	ASM1256768v1	GCF_012567685.1	467604
+Enterobacteriaceae endosymbiont of Donacia provostii	ASM1257014v1	GCF_012570145.1	460294
+Enterobacteriaceae endosymbiont of Donacia proxima	ASM1256928v1	GCF_012569285.1	464530
+Enterobacteriaceae endosymbiont of Donacia semicuprea	ASM1257053v1	GCF_012570535.1	464487
+Enterobacteriaceae endosymbiont of Donacia simplex	ASM1256864v1	GCF_012568645.1	466924
+Enterobacteriaceae endosymbiont of Donacia sparganii	ASM1256904v1	GCF_012569045.1	471720
+Enterobacteriaceae endosymbiont of Donacia thalassina	ASM1256824v1	GCF_012568245.1	467823
+Enterobacteriaceae endosymbiont of Donacia tomentosa	ASM1257113v1	GCF_012571135.1	491697
+Enterobacteriaceae endosymbiont of Donacia versicolorea	ASM1257096v1	GCF_012570965.1	465628
+Enterobacteriaceae endosymbiont of Donacia vulgaris	ASM1256844v1	GCF_012568445.1	465742
+Enterobacteriaceae endosymbiont of Macroplea appendiculata	ASM1257160v1	GCF_012571605.1	472781
+Enterobacteriaceae endosymbiont of Macroplea mutica	ASM1257134v1	GCF_012571345.1	474063
+Enterobacteriaceae endosymbiont of Neohaemonia nigricornis	ASM1257179v1	GCF_012571795.1	477954
+Enterobacteriaceae endosymbiont of Plateumaris braccata	ASM1256332v1	GCF_012563325.1	517501
+Enterobacteriaceae endosymbiont of Plateumaris pusilla	ASM1256276v1	GCF_012562765.1	519975
+Enterobacteriaceae endosymbiont of Plateumaris rustica	ASM1256296v1	GCF_012562965.1	504045
+Enterobacteriaceae endosymbiont of Plateumaris sericea	ASM1256260v1	GCF_012562605.1	522069
+Escherichia albertii	ASM1690475v2	GCF_016904755.1	4631903
+Escherichia coli O157:H7 str. Sakai	ASM886v2	GCF_000008865.2	5594605
+Escherichia coli str. K-12 substr. MG1655	ASM584v2	GCF_000005845.2	4641652
+Escherichia fergusonii	ASM1389243v1	GCF_013892435.1	4784444
+Jejubacter calystegiae	ASM567139v1	GCF_005671395.1	5182800
+Klebsiella aerogenes	ASM763225v1	GCF_007632255.1	5249267
+Klebsiella grimontii	25426_7#101	GCF_902164675.1	6099119
+Klebsiella huaxiensis	ASM326157v2	GCF_003261575.2	6300829
+Klebsiella michiganensis	ASM1513957v1	GCF_015139575.1	6041841
+Klebsiella oxytoca	ASM381292v1	GCF_003812925.1	5879076
+Klebsiella pneumoniae subsp. pneumoniae HS11286	ASM24018v2	GCF_000240185.1	5682322
+Klebsiella quasipneumoniae	ASM1641570v1	GCF_016415705.1	5391123
+Klebsiella quasivariicola	ASM2052566v1	GCF_020525665.1	5869016
+Klebsiella variicola	ASM964897v1	GCF_009648975.1	5536651
+Kluyvera ascorbata	ASM1509913v1	GCF_015099135.1	5371308
+Kluyvera intermedia	ASM964991v1	GCF_009649915.1	4938529
+Kosakonia arachidis	ASM936313v1	GCF_009363135.1	5176406
+Kosakonia cowanii	ASM408989v1	GCF_004089895.1	4685999
+Kosakonia oryzae	ASM165802v2	GCF_001658025.2	5416158
+Kosakonia pseudosacchari	ASM1516741v1	GCF_015167415.1	5003047
+Kosakonia radicincitans	ASM833008v1	GCF_008330085.1	5774740
+Kosakonia sacchari	ASM168339v1	GCF_001683395.1	4902106
+Leclercia adecarboxylata	ASM151883v1	GCF_001518835.1	4803917
+Lelliottia amnigena	ASM1935595v1	GCF_019355955.1	4599109
+Phytobacter diazotrophicus	ASM1292378v1	GCF_012923785.1	5527237
+Phytobacter ursingii	ASM102213v1	GCF_001022135.1	6166452
+Plesiomonas shigelloides	ASM2099102v1	GCF_020991025.1	3860786
+Pluralibacter gergoviae	ASM301992v1	GCF_003019925.1	5408082
+Pseudescherichia vulneris	25426_7#251	GCF_902164725.1	4398823
+Raoultella electrica	ASM671164v1	GCF_006711645.1	5785203
+Raoultella terrigena	ASM1202965v1	GCF_012029655.1	5598454
+Salmonella bongori N268-08	ASM43925v1	GCF_000439255.1	4773537
+Salmonella enterica subsp. enterica serovar Typhimurium str. LT2	ASM694v2	GCF_000006945.2	4951383
+Scandinavium goeteborgense	ASM393589v2	GCF_003935895.2	4713964
+Shigella flexneri 2a str. 301	ASM692v2	GCF_000006925.2	4828820
+Shigella sonnei	ASM1337481v1	GCF_013374815.1	4762774
+Shimwellia blattae DSM 4481 = NBRC 105725	ASM26230v1	GCF_000262305.1	4158725
+[Enterobacter] lignolyticus	ASM146180v1	GCF_001461805.1	4702949
+secondary endosymbiont of Ctenarytaina eucalypti	ASM28733v1	GCF_000287335.1	1441139
+secondary endosymbiont of Heteropsylla cubana	ASM28735v1	GCF_000287355.1	1121596
+secondary endosymbiont of Trabutina mannipara	TRABTM	GCF_900090215.1	298471

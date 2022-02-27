@@ -1,9 +1,9 @@
 """Class to init variables of whole project"""
 class InitValues():
 
-    path = "Genomes\\Archaea\\" # data input file path
-    file_name = "archaea" # data input file name
-    file_name_long = "archaea_long" # data input file name
+    path = "Genomes\\Enterobacteria\\" # data input file path
+    file_name = "enterobacteria" # data input file name
+    file_name_long = "enterobacteria_long" # data input file name
     
     dbname = path + file_name + ".sqlite3" # sqlite db name with extention
     dbtable = "dinuctbl" # sqlite db table name
