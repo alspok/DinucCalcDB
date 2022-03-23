@@ -13,7 +13,6 @@ class InitValues():
     """
     path = "Genomes\\Procaryote\\"
     db_file_name = "procaryote"
-    # file_name_long = "procaryote_long"
 
     dbname = path + db_file_name + ".sqlite3" # sqlite db name with extention
     dbtable = "dinuctbl" # sqlite db table name

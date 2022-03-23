@@ -3,6 +3,7 @@
 venv/
 __pycache__/
 Classes/__pycache__/
+Genomes/
 *.sqlite3
 ncbi_dataset/
 ncbi_dataset.zip
