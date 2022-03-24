@@ -10,12 +10,15 @@ class InitValues():
     path = "Genomes\\Plants\\"
     file_name = "embryophyta"
     file_name_long = "embryophyta_long"
-    """
+    
     path = "Genomes\\Procaryote\\"
     db_file_name = "procaryote"
     
     path = "Genomes\\Test\\"
     db_file_name = "access_id"
+    """
+    path = "Genomes\\Test\\Small_Large\\"
+    db_file_name = "small_large_genomes"
 
     dbname = path + db_file_name + ".sqlite3" # sqlite db name with extention
     dbtable = "dinuctbl" # sqlite db table name

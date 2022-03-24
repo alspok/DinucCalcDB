@@ -18,7 +18,7 @@ from Classes.DataSummary import DataSummary
 #     genome_length = 10**9
 
 def ncbiDinuc():
-    genome_length = 10**10
+    max_genome_length = 10**12
     dir_list = os.listdir(iv.path)
     for acc_file in dir_list:
         # acc_file_name = iv.path + iv.file_name
@@ -39,7 +39,7 @@ def ncbiDinuc():
                         continue
                     else:
                         line_list = line.split()
-                        if int(line_list[-1]) <= genome_length:
+                        if int(line_list[-1]) <= max_genome_length:
                             acc_list.append(line_list[-2])
                         else:
                             fhl.write(line)
