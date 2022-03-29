@@ -1,5 +1,6 @@
 import os
-import datetime
+import re
+from datetime import datetime
 from Classes.InitValues import InitValues as iv
 from Classes.NCBIDataset import NCBIDataset
 from Classes.DataSummary import DataSummary
@@ -18,40 +19,29 @@ from Classes.DataSummary import DataSummary
 #     genome_length = 10**9
 
 def ncbiDinuc():
-    max_genome_length = 10**12
     dir_list = os.listdir(iv.path)
     for acc_file in dir_list:
-        # acc_file_name = iv.path + iv.file_name
-        # acc_file_name_long = iv.path + iv.file_name_long
         acc_file_name = iv.path + acc_file
-        acc_file_name_long = iv.path + acc_file + "_long"
-        
-        # acc_file_name = "Genomes\\Test\\access_id"
-        # acc_file_name_long = "Genomes\\Test\\access_id_long"
         print(acc_file_name)
 
+        # accession number in file line must be second last. first last seq length.
         acc_list = []
         try:
-            with open(acc_file_name, "r") as fh, open(acc_file_name_long, "w") as fhl:
+            with open(acc_file_name, "r") as fh:
                 lines = fh.readlines()
                 for line in lines:
-                    if line[0] == "#":
+                    line = line.strip()
+                    if line.startswith("#") or line.startswith("\n"):
                         continue
                     else:
-                        line_list = line.split()
-                        if int(line_list[-1]) <= max_genome_length:
-                            acc_list.append(line_list[-2])
-                        else:
-                            fhl.write(line)
+                        line_list = line.split("\t")
+                        # line_list = re.split('\t |,', line)
+                        acc_list.append(line_list[-2]) # accession number in file line must be second last. first last seq length.
                 
             acc_list_count = DataSummary().dataSummary(acc_list)
-                
-            # NCBIDataformat().ncbiDataformat(acc_list)    
             NCBIDataset().ncbiDatasets(acc_list, acc_list_count)
         except Exception as e:
-            with open("ncbi_dataset.log", 'a') as fh:
-                now = datetime.now()
-                fh.write(f"{str(e)}\t{now.strftime('%Y.%m.%d %H:%M:%S')}\n")
+            print(e)
         
 if __name__ == "__main__":
     # ncbiDinuc(sys.argv[1])

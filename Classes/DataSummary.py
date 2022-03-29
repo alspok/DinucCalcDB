@@ -14,7 +14,10 @@ class DataSummary():
             with open('summary.json', 'r', encoding="cp437", errors='ignore') as json_fh:
                 json_object = json.load(json_fh)
             
-            for asmbl in json_object["assemblies"]:
-                acc_count += len(asmbl["assembly"]["chromosomes"])
+            try:
+                for asmbl in json_object["assemblies"]:
+                    acc_count += len(asmbl["assembly"]["chromosomes"])
+            except Exception as e:
+                print(e)
         
         return acc_count

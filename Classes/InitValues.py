@@ -18,7 +18,8 @@ class InitValues():
     db_file_name = "access_id"
     """
     path = "Genomes\\Test\\Small_Large\\"
-    db_file_name = "small_large_genomes"
+    file_name = "large_genomes.acc"
+    db_file_name = "large_genomes"
 
     dbname = path + db_file_name + ".sqlite3" # sqlite db name with extention
     dbtable = "dinuctbl" # sqlite db table name

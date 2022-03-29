@@ -1,3 +1,11 @@
 'SchemaItem' object, such as a 'Column' or a 'Constraint' expected, got <class 'numbers.Real'>	2022.02.01 18:40:15
 'SchemaItem' object, such as a 'Column' or a 'Constraint' expected, got <class 'numbers.Real'>	2022.02.01 20:30:36
 'SchemaItem' object, such as a 'Column' or a 'Constraint' expected, got <class 'decimal.Decimal'>	2022.02.01 20:51:48
+list index out of range	2022.03.24 13:00:51
+'charmap' codec can't decode byte 0x81 in position 6766: character maps to <undefined>	2022.03.24 13:00:51
+list index out of range	2022.03.24 13:01:23
+'charmap' codec can't decode byte 0x81 in position 6766: character maps to <undefined>	2022.03.24 13:01:23
+list index out of range	2022.03.24 13:01:42
+'charmap' codec can't decode byte 0x81 in position 6766: character maps to <undefined>	2022.03.24 13:01:42
+list index out of range	2022.03.27 16:59:53
+list index out of range	2022.03.27 17:00:11
