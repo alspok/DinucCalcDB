@@ -1,28 +1,14 @@
 
 class InitValues():
-    """Class to init variables of whole project
-
-    Enterobacteria path and files
-    path = "Genomes\\Enterobacteria\\" # data input file path
-    file_name = "enterobacteria" # data input file name
-    file_name_long = "enterobacteria_long" # data input file name
-
-    path = "Genomes\\Plants\\"
-    file_name = "embryophyta"
-    file_name_long = "embryophyta_long"
+    """ Class to init variables of whole project """
     
-    path = "Genomes\\Procaryote\\"
-    db_file_name = "procaryote"
-    
-    path = "Genomes\\Test\\"
-    db_file_name = "access_id"
-    """
     path = "Genomes\\Test\\Small_Large\\"
-    file_name = "large_genomes.acc"
-    db_file_name = "large_genomes"
-
-    dbname = path + db_file_name + ".sqlite3" # sqlite db name with extention
-    dbtable = "dinuctbl" # sqlite db table name
+    split_path = path.split('\\')
+    last_path = split_path[-2]
+    name = "bacteria_small"
+    file_name = path + name + ".acc"
+    db_name = path + name + ".sqlite3"
+    db_table = "dinuctbl" # sqlite db table name
 
     shuffle_mono = 6 # times to shuffle seq by mononucs 
     shuffle_di = 6 # times to shuffle seq by dinucs

@@ -18,6 +18,6 @@ class DataSummary():
                 for asmbl in json_object["assemblies"]:
                     acc_count += len(asmbl["assembly"]["chromosomes"])
             except Exception as e:
-                print(e)
+                print(f"Something wrong: {e}")
         
         return acc_count

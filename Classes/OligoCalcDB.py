@@ -85,6 +85,6 @@ class OligoCalcDB():
         # SeqMetaDB('dinucdb.sqlite3', 'dinuctbl').initTable()
         # SQLQuery('dinucdb.sqlite3', 'dinuctbl').insertDict(oligoDBDict)
         
-        SeqMetaDB(iv.dbname, iv.dbtable).initTable()
-        SQLQuery(iv.dbname, iv.dbtable).insertDict(oligoDBDict)
+        SeqMetaDB(iv.db_name, iv.db_table).initTable()
+        SQLQuery(iv.db_name, iv.db_table).insertDict(oligoDBDict)
     
